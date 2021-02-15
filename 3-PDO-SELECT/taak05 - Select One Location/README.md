@@ -1,10 +1,18 @@
-# PHP-EXPERT-NIVEAU3-Taak04
+# PHP-EXPERT
 
-## Medewerkers
-
-## Uitleg
+## 3 PDO SELECT - Taak5 Select One Location
 
 In deze opdracht haal je een specifieke lokatie op door gebruik te maken van **prepared statements**.
+
+```php
+$city = "Amsterdam";
+
+$sql = 'SELECT * FROM locations WHERE city = :city';
+$statement = $database_connectie->prepare($sql);
+$statement->bindParam(":city", $city);
+$statement->execute();
+$user = $statement->fetch(); //met fetch haal je 1 rij op uit de database
+```
 
 ## Leerdoelen
 
@@ -13,14 +21,13 @@ In deze opdracht haal je een specifieke lokatie op door gebruik te maken van **p
 ## Opdracht
 
 > 1. Maak gebruik van de database `toolsforever`.
-> 2. Maak in one_location.php van deze opdracht een databaseconnectie.
-> 3. Haal de gegevens op met een SELECT WHERE-statement en haal uit de tabel `locations` alleen de gegevens van _Groningen_ op.
-> 4. Bij 3 moet je wel gebruik maken van _prepared statements_
-> 5. Toon de gegevens op het scherm.
+> 2. Maak een bestand `one_location.php`.
+> 3. Maak ook hier een database connectie met require
+> 4. Haal de gegevens op met een SELECT WHERE-statement en haal uit de tabel `locations` alleen de gegevens van _Groningen_ op.
+> 5. Bij 4 moet je wel gebruik maken van _prepared statements_, dus een sql-statement met een __placeholder__
+> 6. Toon de gegevens op het scherm.
 
 ## Eindresultaat
-
-
 
 ## Bronnen
 

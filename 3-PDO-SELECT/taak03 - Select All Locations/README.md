@@ -13,9 +13,10 @@ In deze opdracht haal je nog meer data uit een database met behulp van het PDO-o
 ## Opdracht
 
 1. Maak gebruik van de database `toolsforever`
-2. Voeg database.php met require in eht bestand `locations.php`
-3. Haal de gegevens op met een SELECT-statement en haal de **lokaties** op zoals je gedaan hebt bij de vorige opdracht.
-4. Loop door de gegevens met een foreach loop en toon alle data in de browser
+2. Maak een bestand `locations.php` in de map `htdocs`
+3. Maak gebruik van het eerder gemaakte PDO-Object, je kunt gewoon `require 'database.php'`; coderen
+4. Haal de gegevens van **lokaties** op met een SELECT-statement uit de tabel `locations` met de voorbeeld code hierboven
+5. Loop door de gegevens met een foreach loop en toon alle data in de browser
 
 ## Eindresultaat
 

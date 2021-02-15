@@ -17,17 +17,19 @@ $sql = 'SELECT * FROM users WHERE email = :email';
 $statement = $database_connectie->prepare($sql);
 $statement->bindParam(":email", $email);
 $statement->execute();
-$user = $statement->fetch();
+$user = $statement->fetch(); //met fetch haal je 1 rij op uit de database
 ```
 
 ### Toelichting
 
-Je ziet hieronder een placeholder staan: `:email`
+Je ziet een placeholder staan: `:email`. Deze placeholder is een tijdelijke naam.
 Tijdens deze module gebruiken we dus de combinatie van een **:** en een **woord** erachter als placeholder: **:placeholder**
-Zo maken we een veilige query. __Dus geen variabele in de sql-statement__
+Zo maken we een veilige query.
+
+> __Dus geen variabele in de sql-statement__
 
 ```php
-$sql = 'SELECT * FROM users WHERE email = :email;
+$sql = 'SELECT * FROM users WHERE email = :email';
 ```
 
 Daarna _prepare_ je de query met behulp van **PDO::prepare()**. Het resultaat van deze methode stoppen we in een nieuwe variabele, genaamd `$statement`. __Dit is een nieuw object!__
@@ -62,11 +64,12 @@ Nu heb je op een veilige wijze alle gegevens van de gebruiker met emailadres `mo
 
 ## Opdracht
 
-> 1. Maak gebruik van de database `toolsforever`.
-> 2. Maak in gebruiker.php van deze opdracht een databaseconnectie.
-> 3. Haal de gegevens op met een SELECT WHERE-statement en haal uit de `users` tabel alleen de gegevens van _Bart Koning_ op.
-> 4. Bij 3 moet je wel gebruik maken van _prepared statements_
-> 5. Toon de gegevens op het scherm.
+1. Maak gebruik van de database `toolsforever`.
+2. Maak een bestand `one_user.php` in de map `htdocs`
+3. Zorg ervoor dat er een database connectie is met require.
+4. Haal de gegevens op met een SELECT WHERE-statement en haal uit de `users` tabel alleen de gegevens van _Bart Koning_ op.
+5. Bij 4 moet je wel gebruik maken van _prepared statements_, dus een sql-statement met een __placeholder__
+6. Toon de gegevens op het scherm.
 
 ## Eindresultaat
 

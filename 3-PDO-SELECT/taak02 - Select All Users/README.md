@@ -31,7 +31,7 @@ foreach($all_paintings as $painting){
 2. Maak een bestand `users.php` in de map `htdocs`
 3. Maak gebruik van het eerder gemaakte PDO-Object, je kunt gewoon `require 'database.php'`; coderen
 4. Haal de gegevens van **gebruikers** op met een SELECT-statement uit de tabel `users` met de voorbeeld code hierboven
-5. Loop door de gegevens met een foreach loop en toon alle data in de browser
+5. Loop door de gegevens met een foreach loop en toon alle data in de browser, bijvoorbeeld in een tabel
 
 ## Eindresultaat
 

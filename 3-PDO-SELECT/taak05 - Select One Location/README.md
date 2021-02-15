@@ -2,6 +2,8 @@
 
 ## 3 PDO SELECT - Taak5 Select One Location
 
+## Uitleg
+
 In deze opdracht haal je een specifieke lokatie op door gebruik te maken van **prepared statements**.
 
 ```php

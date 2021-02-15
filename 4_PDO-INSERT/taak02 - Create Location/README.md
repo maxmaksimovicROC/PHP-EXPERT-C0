@@ -1,6 +1,6 @@
 # PHP-EXPERT
 
-## Locatie toevoegen (INSERT)
+## 4 PDO INSERT - Taak02 Create Location
 
 ## Uitleg
 
@@ -12,7 +12,7 @@ $name = $_POST['form_name'];
 $address = $_POST['form_address'];
 $city = $_POST['form_city'];
 
-$sql = "INSERT INTO users (name, address, city) VALUES (:ph_name , :ph_address, :ph_city)" ;//sql query
+$sql = "INSERT INTO locations (name, address, city) VALUES (:ph_name , :ph_address, :ph_city)" ;//sql query  met PLACEHOLDERS
 $stmt = $db_conn->prepare($sql); //stuur naar mysql.
 $stmt->bindParam(":ph_name", $name ); //verbind de waardes
 $stmt->bindParam(":ph_address", $address ); //verbind de waardes
@@ -27,11 +27,13 @@ $stmt->execute();
 ## Opdracht
 
 > 1. Maak gebruik van de database `toolsforever` met PHPMyAdmin
-> 2. Maak een create_location.php
-> 3. Maak een database connectie zoals hierboven beschreven
-> 4. Maak een formulier waarbij je een naam, adres en stad van een lokatie uit het formulier kan ophalen.
-> 5. Maak gebruik van bovenstaande code om een locatie in de db op te slaan.
-> 6. Check PHPAdmin of de nieuwe gebruiker is opgeslagen.
+> 2. Maak een `location_create.php` in de map `toolsforever`
+> 3. Maak in `location_create.php` een formulier waarbij je een `naam`, `adres` en `stad` kan noteren in invulvelden
+> 4. Zorg ervoor dat je de `method="post"` en `action="location_store.php"` gebruikt bij `<form>`
+> 5. Maak een `location_store.php` in de map `toolsforever`
+> 6. Maak een database connectie met `require` in `location_store.php`
+> 7. Maak gebruik van bovenstaande code in `location_store.php` om een lokatie in de db op te slaan.
+> 8. Check PHPAdmin of de nieuwe gebruiker is opgeslagen.
 
 ## Eindresultaat
 

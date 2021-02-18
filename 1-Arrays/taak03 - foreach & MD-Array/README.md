@@ -1,10 +1,10 @@
-# PHP-EXPERT-Arrays-Taak05
+# PHP-EXPERT
 
-## Medewerkers loopen 2
+## 1-Arrays
 
-## Uitleg
+## taak03 - foreach & MD-Array
 
-In deze opdracht ga je door een array loopen met een foreach-loop. Zoals je hebt kunnen zien verandert het index _getal_ elke keer. Dus we kunnnen nu met een grotere array alle info tonen.
+In deze opdracht ga je door een array loopen met een foreach-loop. Dit is bijna dezelfde taak als hiervoor, maar dan met een andere type loop, de foreach-loop.
 
 ### Multidimensionale array
 
@@ -38,16 +38,6 @@ $medewerkers = [
   ]
 ];
 
-/*  De medewerkers array heeft nu meerdere arrays. */
-
-echo $medewerkers[0]['voornaam'];  //'Willem'
-echo $medewerkers[$x]['voornaam']; // bij $x = 0 is de waarde 'Willem'
-echo $medewerkers[$x]['voornaam']; // bij $x = 1 is de waarde 'Donald'
-
-//gebruik nu een foreach-loop
-foreach($medewerkers as $medewerker ){
-
-}
 ```
 
 ## Leerdoelen
@@ -56,17 +46,16 @@ foreach($medewerkers as $medewerker ){
 
 ## Opdracht
 
-> 1. Neem de code uit het voorbeeld over in taak03.php
-> 2. Schrijf een foreach-loop die door de array heen loopt.
-> 3. Toon van elke persoon ALLE gegevens met een echo op het scherm.
+1. Schrijf een foreach-loop die door de array heen loopt.
+2. Toon van elke persoon ALLE gegevens met een echo op het scherm.
 
 ## Eindresultaat
 
-![Eindresultaat](https://github.com/ROC-van-Amsterdam-College-Amstelland/PHP-EXPERT/blob/master/niveau1/taak05/images/resultaat.png)
+![Eindresultaat](images/resultaat.png)
 
 ## Bronnen
 
 > [W3 Schools - PHP Arrays](https://www.w3schools.com/php/php_arrays_associative.asp)  
-> [W3 Schools - PHP Foreach Loop](https://www.w3schools.in/php/looping/foreach/)  
 > [Geek For Geeks - Associative Arrays in PHP](https://www.geeksforgeeks.org/associative-arrays-in-php/)  
+> [W3 Schools - PHP For Loop](https://www.w3schools.com/php/php_looping_for.asp)  
 > [PHP Manual - Arrays](https://www.php.net/manual/en/language.types.array.php)

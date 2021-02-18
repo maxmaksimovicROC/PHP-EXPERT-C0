@@ -1,8 +1,8 @@
-# PHP-EXPERT-Arrays-Taak07
+# PHP-EXPERT
 
-## Nieuwssite
+## 1-Arrays
 
-## Uitleg
+## taak06 - In other news
 
 In deze opdracht maak je een loop door nieuwsberichten, zodat deze correct getoond worden op het scherm. Deze techniek wordt ook gehanteerd bij WordPress of andere contentmanagementsystemen
 

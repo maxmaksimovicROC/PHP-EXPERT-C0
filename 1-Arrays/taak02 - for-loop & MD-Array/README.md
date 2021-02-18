@@ -1,8 +1,8 @@
-# PHP-EXPERT-Arrays-Taak02
+# PHP-EXPERT
 
-## Medewerkers loopen 1
+## 1-Arrays
 
-## Uitleg
+## taak02 - for-loop & MD-Array
 
 In deze opdracht ga je door een array loopen met een for-loop. Zoals je hebt kunnen zien verandert het index _getal_ elke keer. Dus we kunnnen nu met een grotere array alle info tonen.
 
@@ -58,7 +58,6 @@ echo $medewerkers[$x]['voornaam']; // bij $x = 1 is de waarde 'Donald'
 ## Eindresultaat
 
 ![Eindresultaat](/PHP-EXPERT/1-Arrays/taak02/images/resultaat.png)
-
 
 ## Bronnen
 

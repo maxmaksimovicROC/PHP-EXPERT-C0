@@ -1,6 +1,8 @@
-# PHP-EXPERT-Arrays-Taak01
+# PHP-EXPERT
 
-## Medewerkers
+## 1-Arrays
+
+## taak01 - Multidimensionale Arrays
 
 ## Uitleg
 

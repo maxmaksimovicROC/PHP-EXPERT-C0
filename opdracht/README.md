@@ -4,7 +4,7 @@
 
 ## Toelichting
 
-Soms heb je te maken met heel veel data. Soms heb je te maken met hele grote databases. In deze opdracht ga je met een grote dataset werken.
+Soms heb je te maken met heel veel data. Soms heb je te maken met hele grote databases. In deze opdracht ga je met een grote dataset (>10.000)werken.
 
 ## Leerdoelen
 
@@ -14,25 +14,15 @@ Soms heb je te maken met heel veel data. Soms heb je te maken met hele grote dat
 
 - Je mag gebruik maken van een CSS framework
 
-### Database
+## Userstories
 
-1. [ ] Maak een database: `phpexpert`
-2. [ ] Importeer het bestand `superheroes.sql` in je database
-3. [ ] Maak een php bestand: `database.php` en zet hierin code om een database connectie te maken (gebruik PDO)
-4. [ ] Maak een `superheroes_index.php` waarbij de kolommen `Title`, `Àlignment` van tabel `superheroes` __toond__. Stijl de tabel (mag met [Bootstrap](https://getbootstrap.com))
-5. [ ] Maak op de bovengenoemde tabel een link of een knop waarmee naar de pagina gaat om een individuele superhero kunt bekijken in detail
-6. [ ] Maak een pagina `superheroes_show.php` waarme je de gegevens van een individuele superhero kunt __bekijken__
-7. [ ] Maak een pagina `superheros_edit.php` waarmee je de gegevens van een individuele superhero kunt __updaten/wijzigen__.
-8. [ ] Maak een pagina `superheroes_delete.php` waarmee je een individuele superhero kunt __verwijderen__.
+- Ik wil als gebruiker _een volledig overzicht_ kunnen bekijken van alle superheroes en alle eigenschappen
+- IK wil als gebruiker een superhero kunnen kiezen vanuit het overzicht middels een knop of link
+- Ik wil alle eigenschappen van een individuele superhero kunnen aanpassen
+- Ik wil vanuit het overzicht een individuele superhero kunnen verwijderen
+- Ik wil een filter functionaliteit waarmee ik _het geslacht_ van een superhero kan filteren
+- Ik wil als gebruiker een modern uiterlijk hebben van de applicatie (Bootstrap Framework is toegestaan)
 
 ## Eindresultaat
 
-Het eindresultaat is een volledig werkende webapplicatie die de overzichten van `superheros` kan tonen. Daarnaast ook de _profiel_ pagina's van individuele entiteiten. Je kunt de verschilledne entitieiten verwijderen, aanpassen en toevoegen.
-
-## Bronnen
-
-Een lijstje van links naar externe bronnen
-
-> Bijvoorbeeld:  
-> [W3 Schools - PHP Functions](https://www.w3schools.com/php/php_functions.asp)  
-> [Jaap van der Veen - PHP Basiscursus Les3: Functies](https://phpbasis.jaapvdveen.nl/basiscursus-php/les-3-inleiding-functies/)
+Het eindresultaat is een volledig werkende webapplicatie die de overzichten van `superheros` kan tonen. Je kunt de verschillende superheroes verwijderen, aanpassen en toevoegen.

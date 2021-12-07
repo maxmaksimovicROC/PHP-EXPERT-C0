@@ -16,7 +16,7 @@ $all_paintings = $statement->fetchAll(); //fetchAll alle rijen die voldoen aan d
 
 print_r($all_paintings);
 
-foreach($all_paintings as $painting){  
+foreach($all_paintings as $painti ng){  
   echo $painting['naam'] . "<br>";
 }
 ```

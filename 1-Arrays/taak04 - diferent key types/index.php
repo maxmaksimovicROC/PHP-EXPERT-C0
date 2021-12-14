@@ -34,6 +34,21 @@ $games = [
     'fps' => [
         'naam' => 'Left for dead 2',
         'uitgever' => 'Valve',
-        'prijs' => '40.00'
+        'prijs' => '8.19'
     ]
 ];
+
+echo "speelgoed" . "<br>";
+foreach($speelgoed as $x){
+    echo $x['naam'];
+    echo $x['soort'];
+    echo $x['prijs'] . "<br>";
+    
+}
+
+echo "games" . "<br>";
+foreach($games as $y){
+    echo $y['naam'];
+    echo $y['uitgever'];
+    echo $y['prijs'] . "<br>";
+}

@@ -17,7 +17,7 @@ $user = $statement->fetch(); //met fetch haal je 1 rij op uit de database
 ```
 
 ## Leerdoelen
-
+KT
 > 1. [ ] Ik toon een enkele rij gegevens uit een database tabel met behulp van PDO (herhaling taak03)
 
 ## Opdracht
